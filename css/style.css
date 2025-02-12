@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-section-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/banner.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.hero-content {
+    position: relative;
+    color: white;
+    z-index: 1;
+    left: 8%;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.services-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.services-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-item {
+    width: 250px;
+    text-align: center;
+}
+
+.service-item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.gallery img {
+    width: 100%; /* Ensures images take up 100% of their container */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+}
